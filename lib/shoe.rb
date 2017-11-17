@@ -7,9 +7,8 @@ class Shoe
   def initialize(brand)
     @brand = brand
       BRANDS << brand
-      if brand != brand
-        brand.delete
-      end
+      BRANDS.uniq
+        
   end
 
   def cobble
